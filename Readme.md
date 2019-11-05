@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Татьяна Кузьмина](https://up.htmlacademy.ru/adaptive/18/user/1053279).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер] (https://htmlacademy.ru/profile/id73199)
 
 ---
 
