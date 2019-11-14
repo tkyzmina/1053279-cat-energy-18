@@ -1,3 +1,9 @@
-body {
-  background: white;
-}
+@import "blocks/main.scss";
+@import "blocks/header.scss";
+@import "blocks/first.scss";
+@import "blocks/weight-plan.scss";
+@import "blocks/how-it-works.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/products.scss";

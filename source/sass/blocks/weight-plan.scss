@@ -1,0 +1,58 @@
+.weight-plan__header {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 37.02px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.slim-plan,
+.gain-plan {
+  background-color: #f2f2f2;
+}
+
+.weight-plan__button {
+  position: relative;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.weight-plan__button::after {
+  content: "";
+  position: absolute;
+  background: url(../../img/icon-right-arrow-long.svg);
+  top: 8px;
+  left: 80px;
+  width: 24px;
+  height: 11px;
+}
+
+.weight-plan__button:hover::after {
+  position: absolute;
+  content: "";
+  background: url(../../img/icon-right-arrow-verylong.svg);
+  top: 8px;
+  left: 80px;
+  width: 33px;
+  height: 11px;
+}
+
+.weight-plan__button:active {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.weight-plan__button:active::after {
+  position: absolute;
+  content: "";
+  background: url(../../img/icon-right-arrow-verylong.svg);
+  top: 8px;
+  left: 80px;
+  width: 33px;
+  height: 11px;
+  color: rgba(17, 17, 17, 0.3);
+}

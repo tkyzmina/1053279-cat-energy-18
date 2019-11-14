@@ -1,0 +1,32 @@
+.header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.header__logo-image:active {
+  opacity: 0.6;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__item {
+  padding: 20px 50px 20px 50px;
+}
+
+.site-list__item a {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+}
