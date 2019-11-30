@@ -1,7 +1,11 @@
 .header {
-  width: 320px;
-  margin: 0 auto;
+  // // width: 280px;
+  // margin: 0 auto;
   padding: 0 20px;
+}
+
+.header__logo-image {
+  margin-top: 11px;
 }
 
 .header__logo-image:hover {
@@ -14,19 +18,43 @@
 
 .main-nav__list {
   list-style: none;
-  padding: 0;
   margin: 0;
-}
-
-.site-list__item {
   padding: 20px 50px 20px 50px;
 }
 
 .site-list__item a {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    display: flex;
+    width: 440px;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 40px;
+  }
+
+  .site-list__item a {
+    font-size: 18px;
+    line-height: 24.86px;
+    font-weight: 400;
+    color: #222222;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 480px;
+  }
 }
