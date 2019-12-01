@@ -1,11 +1,10 @@
 .products__main-header {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
 }
-
 
 .products__list {
   list-style: none;
@@ -14,7 +13,7 @@
 }
 
 .products__header {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -30,7 +29,7 @@
 }
 
 .products__item p {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -38,7 +37,7 @@
 }
 
 .properties__column {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -66,10 +65,18 @@
 }
 
 .button__all-products:active {
-  color: rgba(68, 68, 68, 0.3)
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .products__header--all {
   width: 220px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

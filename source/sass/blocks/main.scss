@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 400;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,7 +35,6 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -28,7 +43,7 @@ input[type="radio"].visually-hidden {
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -39,17 +54,9 @@ a {
   text-decoration: none;
 }
 
-.main-page,
-.inner-page {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 0;
-}
-
 .button {
-  padding: 0;
   border: none;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -59,8 +66,13 @@ a {
 
   cursor: pointer;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
-  padding: 10px 73px 10px 73px;
+  height: 40px;
+  padding: 0;
+  margin: auto;
 }
 
 .button:hover {
@@ -70,4 +82,41 @@ a {
 .button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5eaa2f;
+}
+
+@media (min-width: $mobile-width) {
+  .container {
+    width: 280px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .main-page,
+  .inner-page {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .main-page,
+  .inner-page {
+    width: auto;
+  }
 }

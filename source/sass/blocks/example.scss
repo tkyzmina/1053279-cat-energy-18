@@ -1,21 +1,32 @@
 .example__header {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .example {
   background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
-.example__wrapper {
+.example__data__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .example__value {
-  font-family: "Oswald", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -23,14 +34,13 @@
 
   width: 124px;
   border: solid 1px #cdcdcd;
-}
-
-.example__value:first-child {
-  margin-right: 32px;
+  border-radius: 3px;
+  margin: 0;
+  padding: 15px 40px;
 }
 
 .example__field {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
@@ -38,12 +48,98 @@
 }
 
 .example__price {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
-
   text-align: center;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    margin-bottom: 60px;
+  }
+
+  .example__data {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__price {
+    font-size: 20px;
+    line-height: 20px;
+    width: 185px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__header {
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    margin: 0;
+    margin-top: -200px;
+    margin-bottom: 130px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: $font-gray;
+    margin-bottom: 70px;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+    color: #111111;
+  }
+
+  .example__field {
+    font-size: 14px;
+    line-height: 14px;
+    color: $font-gray;
+  }
+
+  .example__slider--placeholder {
+    background: url("https://via.placeholder.com/677x517");
+    width: 677px;
+    height: 517px;
+  }
+
+  .example {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin-bottom: 0;
+  }
+
+  .example__data {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+  }
+
+  .example__wrapper {
+    width: 440px;
+  }
+
+  .example__data__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .example__price {
+    width: 329px;
+  }
 }
