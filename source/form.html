@@ -11,10 +11,15 @@
 
 <body>
   <header class="header container">
-    <a class="header__logo">
-      <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
-    </a>
-    <nav class="main-nav">
+    <div class="header__top-wrapper">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list">
         <li class="site-list__item site-list__item--active"><a>Главная</a></li>
         <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>

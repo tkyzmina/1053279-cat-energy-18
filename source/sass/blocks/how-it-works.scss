@@ -4,6 +4,14 @@
   line-height: 60px;
   font-weight: 400;
   color: #111111;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 31px;
+}
+
+.how-it-works {
+  padding-top: 17px;
+  padding-bottom: 20px;
 }
 
 .how-it-works__list {
@@ -14,7 +22,9 @@
 
 .how-it-works__item {
   position: relative;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
   padding-left: 80px;
 }
 
@@ -23,7 +33,7 @@
   position: absolute;
   background: center no-repeat url("../img/advantage-leaf@1x.png");
   background-color: #68b738;
-  top: 0;
+  top: -3px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -34,7 +44,7 @@
   position: absolute;
   background: center no-repeat url("../img/advantage-powder@1x.png");
   background-color: #68b738;
-  top: 0;
+  top: -3px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -45,7 +55,7 @@
   position: absolute;
   background: center no-repeat url("../img/advantage-dining@1x.png");
   background-color: #68b738;
-  top: 0;
+  top: -3px;
   left: 0;
   width: 60px;
   height: 60px;
@@ -56,13 +66,26 @@
   position: absolute;
   background: center no-repeat url("../img/advantage-clock@1x.png");
   background-color: #68b738;
-  top: 0;
+  top: -3px;
   left: 0;
   width: 60px;
   height: 60px;
 }
 
+.example__slider--placeholder {
+  background: url("../img/before-mobile@1x.png");
+  width: 311px;
+  height: 232px;
+  margin-bottom: 45px;
+}
+
 @media (min-width: $tablet-width) {
+  .how-it-works__header {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 70px;
+  }
+
   .example__wrapper {
     margin-bottom: 75px;
   }
@@ -80,11 +103,15 @@
     padding: 0;
     padding-top: 110px;
     margin: 0;
+
+    &:nth-child(2n) {
+      padding-right: 84px;
+    }
   }
 
   .how-it-works__item:nth-child(1),
   .how-it-works__item:nth-child(2) {
-    margin-bottom: 90px;
+    padding-bottom: 135px;
   }
 
   .how-it-works__item:nth-child(3),
@@ -103,11 +130,11 @@
     content: "1";
     position: absolute;
     font-family: "Oswald", "Arial", sans-serif;
-    font-size: 281px;
-    line-clamp: 281px;
+    font-size: 281.07px;
+    line-height: 281.07px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -40px;
+    left: 120px;
     z-index: -1;
   }
 
@@ -115,11 +142,11 @@
     content: "2";
     position: absolute;
     font-family: "Oswald", "Arial", sans-serif;
-    font-size: 281px;
-    line-clamp: 281px;
+    font-size: 281.07px;
+    line-height: 281.07px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -40px;
+    left: 110px;
     z-index: -1;
   }
 
@@ -127,11 +154,11 @@
     content: "3";
     position: absolute;
     font-family: "Oswald", "Arial", sans-serif;
-    font-size: 281px;
-    line-clamp: 281px;
+    font-size: 281.07px;
+    line-height: 281.07px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -40px;
+    left: 110px;
     z-index: -1;
   }
 
@@ -139,11 +166,11 @@
     content: "4";
     position: absolute;
     font-family: "Oswald", "Arial", sans-serif;
-    font-size: 281px;
-    line-clamp: 281px;
+    font-size: 281.07px;
+    line-height: 281.07px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -40px;
+    left: 110px;
     z-index: -1;
   }
 
@@ -164,7 +191,7 @@
   .how-it-works__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    // margin-bottom: 200px;
   }
 
   .how-it-works__item {
@@ -172,12 +199,21 @@
     line-height: 24px;
     width: 245px;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 114px;
     margin: 0;
+
+    &::before {
+      top: 2px;
+    }
+
+    &:nth-child(2n) {
+      padding-right: 0;
+    }
   }
 
   .how-it-works {
     margin-bottom: 100px;
+    padding-top: 43px;
   }
 
   .how-it-works__item--good::after {
@@ -187,8 +223,8 @@
     font-size: 281px;
     line-clamp: 281px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -38px;
+    left: 110px;
     z-index: -1;
   }
 
@@ -199,8 +235,8 @@
     font-size: 281px;
     line-clamp: 281px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -38px;
+    left: 110px;
     z-index: -1;
   }
 
@@ -211,8 +247,8 @@
     font-size: 281px;
     line-clamp: 281px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -38px;
+    left: 110px;
     z-index: -1;
   }
 
@@ -223,8 +259,9 @@
     font-size: 281px;
     line-clamp: 281px;
     color: $bg-gray;
-    top: 90px;
-    left: 125px;
+    top: -38px;
+    left: 110px;
+    ;
     z-index: -1;
   }
 }

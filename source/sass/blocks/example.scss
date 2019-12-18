@@ -6,45 +6,58 @@
   color: #111111;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .example {
   background-color: #f2f2f2;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 30px;
 }
 
 .example__data__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.example__cell {
+  position: relative;
+  text-align: center;
+  min-width: 122px;
+  min-height: 54px;
+  border: solid 1px #cdcdcd;
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
 }
 
 .example__value {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #111111;
-
-  width: 124px;
-  border: solid 1px #cdcdcd;
-  border-radius: 3px;
+  text-transform: uppercase;
   margin: 0;
-  padding: 15px 40px;
+  padding: 15px 10px;
 }
 
 .example__field {
+  position: absolute;
+  width: 60px;
+  top: 33px;
+  left: 15px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
   color: #444444;
+  text-transform: lowercase;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f2f2f2;
 }
 
 .example__price {
@@ -55,6 +68,8 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .example__description {
@@ -63,14 +78,43 @@
   margin-bottom: 27px;
 }
 
+.example__wrapper {
+  margin-bottom: 30px;
+}
+
 @media (min-width: $tablet-width) {
+  .example__header {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
   .example {
-    margin-bottom: 60px;
+    padding-top: 74px;
+    padding-bottom: 60px;
+    // margin-bottom: 60px;
+    background-color: #ffffff;
   }
 
   .example__data {
     display: flex;
     justify-content: space-between;
+    // align-items: center;
+  }
+
+  .example__data__wrapper {
+    width: 367px;
+    margin: 0;
+  }
+
+  .example__wrapper {
+    margin-bottom: 85px;
   }
 
   .example__price {
@@ -81,7 +125,37 @@
     padding: 0;
     text-align: right;
   }
+
+  .example__cell {
+    width: 160px;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37.02px;
+  }
+
+  .example__field {
+    width: 130px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ffffff;
+    top: 62px;
+    left: 10px;
+  }
+
+  .example__slider--placeholder {
+    background: url("../img/before-tablet@1x.png");
+    width: 677px;
+    height: 499px;
+    margin-bottom: 45px;
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .example__header {
@@ -89,11 +163,12 @@
     line-height: 60px;
     color: #111111;
     margin: 0;
-    margin-top: -200px;
-    margin-bottom: 130px;
+    margin-top: -213px;
+    margin-bottom: 144px;
   }
 
   .example__description {
+    width: 435px;
     font-size: 16px;
     line-height: 24px;
     color: $font-gray;
@@ -110,19 +185,29 @@
     font-size: 14px;
     line-height: 14px;
     color: $font-gray;
+    background-color: $bg-gray;
+  }
+
+  .example__slider {
+    position: relative;
   }
 
   .example__slider--placeholder {
-    background: url("https://via.placeholder.com/677x517");
+    position: absolute;
+    background: url("../img/before-desktop@1x.png");
     width: 677px;
-    height: 517px;
+    height: 499px;
+    top: -268px;
+    right: -26px;
   }
 
   .example {
     display: flex;
     justify-content: space-between;
-    padding-top: 70px;
+    padding-top: 85px;
+    padding-bottom: 40px;
     margin-bottom: 0;
+    background-color: $bg-gray;
   }
 
   .example__data {
@@ -133,10 +218,11 @@
 
   .example__wrapper {
     width: 440px;
+    margin-bottom: 36px;
   }
 
   .example__data__wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 61px;
   }
 
   .example__price {
