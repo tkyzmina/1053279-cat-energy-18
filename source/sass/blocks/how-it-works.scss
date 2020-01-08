@@ -72,12 +72,7 @@
   height: 60px;
 }
 
-.example__slider--placeholder {
-  background: url("../img/before-mobile@1x.png");
-  width: 311px;
-  height: 232px;
-  margin-bottom: 45px;
-}
+
 
 @media (min-width: $tablet-width) {
   .how-it-works__header {
@@ -172,13 +167,6 @@
     top: -40px;
     left: 110px;
     z-index: -1;
-  }
-
-  .example__slider--placeholder {
-    background: url("https://via.placeholder.com/677x499");
-    width: 677px;
-    height: 499px;
-    margin: auto;
   }
 }
 
