@@ -33,14 +33,121 @@
   </header>
 
   <main>
+    <div class="form__header--wrapper">
+      <h1 class="form__main--header">Подбор программы</h1>
+    </div>
+    <form action="https://echo.htmlacademy.ru/courses" method="post" name="main-form " class="form container">
+      <div class="main-data-column__wrapper">
+        <fieldset class="main-data">
+          <legend class="main-data__legend">Заполните анкету и мы подберем программу питания для вашего кота
+          </legend>
+
+          <div>
+            <label for="id-field" class="main-data__field">
+              <span class="main-data__text">Имя:*</span>
+              <input type="text" id="id-field" class="main-data__id" placeholder="Барсик">
+            </label>
+          </div>
+          <div>
+            <label for="weight-field" class="main-data__field">
+              <span class="main-data__text">Вес (кг):*</span>
+              <input type="text" id="weight-field" class="main-data__id" placeholder="7">
+            </label>
+          </div>
+          <div>
+            <label for="age-field" class="main-data__field">
+              <span class="main-data__text">Возраст (лет):</span>
+              <input type="text" id="age-field" class="main-data__id" placeholder="7">
+            </label>
+          </div>
+        </fieldset>
+        <div class="column">
+          <fieldset class="main-data__weight">
+            <input type="radio" name="weight-plan" value="slim" id="slim-plan" class="main-data__weight-plan " checked>
+            <label for="slim-plan" class="main-data__plan main-data__form--radio">Похудение</label>
+            <input type="radio" name="weight-plan" value="pro" id="pro-plan" class="main-data__weight-plan">
+            <label for="pro-plan" class="main-data__plan main-data__form--radio">Набор массы</label>
+            <input type="radio" name="weight-plan" value="advice" id="advice-plan" class="main-data__weight-plan">
+            <label for="advice-plan" class="main-data__plan main-data__form--radio">Не знаю (Нужен ваш совет)</label>
+          </fieldset>
+        </div>
+      </div>
+
+      <fieldset class="contacts-field">
+        <div class="contacts-field__legend--wrapper">
+          <h3 class="contacts-field__legend contacts-field__legend--line">Контактные данные (владельца кота)</h3>
+        </div>
+        <div class="contacts-field__wrapper">
+          <div class="contacts-field__wrapper--item">
+            <label for="email-field" class="contacts-field--line">
+              <span class="contacts-field__text">E-mail:*</span>
+              <input type="email" name="email" id="email-field" class="contacts-field__email"
+                placeholder="kuklachev@gmail.com">
+              <svg class="contacts-field__email--iconsvg" width="17" height="13">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="contacts-field__wrapper--item">
+            <label for="mobile-field" class="contacts-field--line">
+              <span class="contacts-field__text">Телефон:*</span>
+              <input type="tel" name="mobile" id="mobile-field"
+                class="contacts-field__mobile contacts-field__mobile--icon" placeholder="8 (960) 900-60-90">
+              <svg class="contacts-field__mobile--iconsvg" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="comment-field__wrapper">
+        <div class="comment--wrapper">
+          <h3 class="comment--legend">Комментарий</h3>
+        </div>
+        <textarea name="comment" id="comment-field" rows="8" class="comment__text-area"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </div>
+      <fieldset class="add-field">
+        <div class="add-field__legend--wrapper">
+          <h3 class="add-field__legend">Дополнительно</h3>
+        </div>
+        <div class="add-field__wrapper">
+          <div class="add-field__item">
+            <input type="checkbox" name="sweetener" id="sweetener-field" checked class="add-field__checkbox">
+            <label for="sweetener-field" class="add-field__line">Сахарозаменитель</label>
+          </div>
+          <div class="add-field__item">
+            <input type="checkbox" name="water" id="water-field" class="add-field__checkbox">
+            <label for="water-field" class="add-field__line">Питьевая вода</label>
+          </div>
+          <div class="add-field__item">
+            <input type="checkbox" name="milk" id="milk-field" class="add-field__checkbox">
+            <label for="milk-field" class="add-field__line">Молоко</label>
+          </div>
+          <div class="add-field__item">
+            <input type="checkbox" name="vitamin" id="vitamin-field" class="add-field__checkbox">
+            <label for="vitamin-field" class="add-field__line">Витамины</label>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form__button--wrapper">
+        <button type="submit" class="button form__button">Отправить заявку</button>
+        <p class="form__note">* — Обязательные поля</p>
+      </div>
+    </form>
     <section class="contacts">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__wrapper ">
-        <p class="contacts__invite">Приглашем к содрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+        <p class="contacts__invite">Приглашaем<br> к содрудничеству дилеров!</p>
+        <div class="contacts__address--wrapper">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 </p>
+          <p class="contacts__address">Санкт-Петербург</p>
+        </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map"><iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd29277ff8b9ce2ad9a56a5a84609877a4673d5c5ca30041338f7a28986d4d8a&amp;source=constructor"
+          width="320" height="363" frameborder="0"></iframe>
+      </div>
     </section>
   </main>
 
