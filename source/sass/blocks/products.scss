@@ -64,7 +64,7 @@
   padding-bottom: 21px;
 }
 
-.poducts__properties {
+.products__properties {
   border-spacing: 0;
   margin: 0;
   padding: 0;
@@ -88,7 +88,7 @@
   width: 140px;
 }
 
-.products__item--main-wrapper {
+.products__card {
   display: flex;
   flex-wrap: wrap;
 }
@@ -145,7 +145,7 @@
     padding-right: 30px;
   }
 
-  .products__item--main-wrapper {
+  .products__card {
     position: relative;
     display: flex;
     flex-wrap: wrap;

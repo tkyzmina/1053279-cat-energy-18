@@ -1,0 +1,147 @@
+.cat__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 39px;
+  max-width: 270px;
+}
+
+.cat__list {
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 11px;
+}
+
+.cat__list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-item__label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.cat-item__field {
+  width: 100%;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  padding: 13px 15px;
+  transition: 0.3s;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+
+  &:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+}
+
+.cat-item__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  margin-right: 11px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.cat-item__label .cat__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #111111;
+  min-width: 330px;
+  padding-bottom: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .cat__list {
+    padding-left: 41px;
+    padding-right: 1px;
+    margin-bottom: 53px;
+    min-width: 50%;
+
+  }
+
+  .cat-item__text {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    margin-right: 18px;
+  }
+
+  .cat-item__field {
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    padding: 10px 18px;
+  }
+
+  .cat-item__label {
+    margin-bottom: 21px;
+  }
+
+  .cat__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #111111;
+    min-width: 330px;
+    padding-bottom: 66px;
+  }
+
+
+  .cat-item__text {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222222;
+    margin-right: 18px;
+  }
+
+  .cat-item__field {
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    padding: 10px 18px;
+  }
+
+  .cat-item__label {
+    margin-bottom: 21px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat__list {
+    padding-left: 1px;
+    margin-bottom: 50px;
+  }
+
+  .cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+}

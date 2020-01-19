@@ -20,12 +20,13 @@
           <img class="header__logo-image" src="img/logo-mobile.svg" alt="Логотип Cat Energy" width="191" height="38">
         </picture>
       </a>
-      <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+      <button class=" toggle-nav toggle-nav--nojs" type="button">
+        <!-- <button class=" main-nav__toggle toggle-nav main-nav__toggle--nojs" type="button"></button> ???main-nav__toggle main-nav__toggle--nojs ??? -->
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <ul class="main-nav__list">
+      <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active"><a>Главная</a></li>
         <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
         <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
@@ -35,9 +36,9 @@
   <main class="main-page ">
     <section class="first-screen  ">
       <div class="first-screen__wrapper">
-        <h2 class="first-screen__header">
+        <h1 class="first-screen__header">
           Функциональное питание для котов
-        </h2>
+        </h1>
         <p class="first-screen__moto">Занялся собой? Займись котом!</p>
       </div>
       <a class="button first-screen__button" href="form.html">Подобрать программу</a>
@@ -101,14 +102,14 @@
         </div>
       </div>
       <div class="example__slider">
-        <div class="example__slider--before"></div>
-        <div class="example__slider--after"></div>
+        <div class="example__slider-before"></div>
+        <div class="example__slider-after"></div>
         <div class="range">
           <p>Было</p>
           <div class="range__controls">
             <div class="range__scale">
               <div class="range__bar">
-                <div class="range__bar--green"></div>
+                <div class="range__bar-green"></div>
               </div>
             </div>
           </div>
@@ -122,8 +123,10 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__wrapper ">
         <p class="contacts__invite">Приглашем к содрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+        <div class="contacts__list">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 </p>
+          <p class="contacts__address">Санкт-Петербург</p>
+        </div>
       </div>
 
       <div class="contacts__map"><iframe
@@ -132,12 +135,12 @@
       </div>
     </section>
   </main>
-  <footer class="footer ">
+  <footer class="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo"><img src="img/logo-footer.svg" width="128" heigt="24" alt="Логотип Cat Energy"></a>
       <ul class="social">
         <li class="social__item">
-          <a class="social__link--vk" href="https://vk.com/htmlacademy" aria-label="Cat Energy
+          <a class="social__link-vk" href="https://vk.com/htmlacademy" aria-label="Cat Energy
             Вконтакте">
             <svg class="social__link social__link--vksvg" width="22" height="12">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
@@ -146,7 +149,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link--insta" href="https://instagram.com/htmlacademy" aria-label="Cat
+          <a class="social__link-insta" href="https://instagram.com/htmlacademy" aria-label="Cat
             Energy в Instagram">
             <svg class="social__link social__link--instasvg" width="16.1" height="16">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
@@ -154,7 +157,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link--fb" href="https://facebook.com/htmlacademy" aria-label="Cat в Energy
+          <a class="social__link-fb" href="https://facebook.com/htmlacademy" aria-label="Cat в Energy
             Facebook">
             <svg class="social__link social__link--fbsvg" width="10" height="19">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
@@ -163,7 +166,7 @@
         </li>
       </ul>
 
-      <div class="copyright__wrapper">
+      <div class="copyright-wrapper">
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__logo" width="27" height="34">
