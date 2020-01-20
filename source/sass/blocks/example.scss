@@ -138,7 +138,7 @@
   padding: 0;
 }
 
-.example__slider--before {
+.example__slider-before {
   background: url("../img/before-mobile@1x.png");
   width: 311px;
   height: 232px;
@@ -150,7 +150,7 @@
   }
 }
 
-.example__slider--after {
+.example__slider-after {
   display: none;
   background: url("../img/after-mobile@1x.png");
   width: 311px;
@@ -235,7 +235,7 @@
   //   height: 499px;
   //   margin-bottom: 45px;
   // }
-  .example__slider--before {
+  .example__slider-before {
     background: url("../img/before-tablet@1x.png");
     width: 677px;
     height: 499px;
@@ -247,7 +247,7 @@
     }
   }
 
-  .example__slider--after {
+  .example__slider-after {
     display: none;
     background: url("../img/after-tablet@1x.png");
     width: 677px;
@@ -310,7 +310,7 @@
     }
   }
 
-  .range__bar--green {
+  .range__bar-green {
     position: absolute;
     content: "";
     width: 8px;
@@ -358,7 +358,7 @@
     position: relative;
   }
 
-  .example__slider--before {
+  .example__slider-before {
     content: "";
     position: absolute;
     background: url("../img/before-desktop@1x.png");
@@ -373,7 +373,7 @@
     }
   }
 
-  .example__slider--after {
+  .example__slider-after {
     display: none;
     content: "";
     position: absolute;

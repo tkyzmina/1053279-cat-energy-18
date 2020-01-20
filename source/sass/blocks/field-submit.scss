@@ -1,0 +1,53 @@
+.select__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.select__note {
+  text-align: center;
+  margin-top: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .select__button {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    width: 283px;
+    height: 52px;
+    margin: 0;
+  }
+
+  .select__submit {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  .select__note {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #444444;
+    margin: 0;
+    margin-left: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .select__button {
+    width: 568px;
+  }
+
+  .select__submit {
+    padding-left: 0;
+  }
+
+  .select__note {
+    margin-left: 82px;
+  }
+}

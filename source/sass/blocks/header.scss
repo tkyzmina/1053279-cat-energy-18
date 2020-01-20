@@ -1,4 +1,4 @@
-.main-nav__toggle {
+.toggle-nav {
   position: relative;
   cursor: pointer;
   border: none;
@@ -114,11 +114,11 @@
     display: block;
   }
 
-  .main-nav--nojs .main-nav__toggle {
+  .main-nav--nojs .toggle-nav {
     display: none;
   }
 
-  .main-nav__toggle--nojs {
+  .toggle-nav--nojs {
     display: none;
   }
 
@@ -170,7 +170,7 @@
     padding-bottom: 7px;
   }
 
-  .main-nav__toggle {
+  .toggle-nav {
     display: none;
   }
 

@@ -1,5 +1,5 @@
-@import "blocks/normalize.scss";
-@import "blocks/variables.scss";
+@import "normalize.scss";
+@import "variables.scss";
 @import "blocks/main.scss";
 @import "blocks/header.scss";
 @import "blocks/first.scss";
@@ -10,4 +10,10 @@
 @import "blocks/footer.scss";
 @import "blocks/products.scss";
 @import "blocks/add.scss";
-// @import "blocks/outlines.scss";
+@import "blocks/field-form-header.scss";
+@import "blocks/field-cat.scss";
+@import "blocks/field-result.scss";
+@import "blocks/field-owner.scss";
+@import "blocks/field-comment.scss";
+@import "blocks/field-add.scss";
+@import "blocks/field-submit.scss";
