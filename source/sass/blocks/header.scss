@@ -39,16 +39,20 @@
 }
 
 .header {
-  padding: 0 20px;
+  padding: 0;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header__top-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  padding-bottom: 5px;
 }
+
+
 
 .header-logo {
   padding: 0;
@@ -134,14 +138,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    margin-top: -2px;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 708px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 11px;
   }
 
@@ -185,6 +193,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    margin-top: -9px;
+  }
+
   .main-nav__list {
     width: 480px;
   }
@@ -192,8 +204,8 @@
   .header {
     width: 1220px;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 50px;
   }
 

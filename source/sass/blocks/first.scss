@@ -7,7 +7,7 @@
 .first-screen__wrapper {
   position: relative;
   padding: 0;
-  padding-top: 28px;
+  padding-top: 30px;
 
   &::after {
     content: "";
@@ -15,7 +15,7 @@
     background: no-repeat url("../img/index-can-mobile@1x.png");
     width: 280px;
     height: 270px;
-    top: 165px;
+    top: 168px;
     left: 20px;
 
     @media (min-resolution: $retina-dppx) {
@@ -29,7 +29,7 @@
     position: absolute;
     background: no-repeat url("../img/index-background-mobile@1x.jpg");
     width: 320px;
-    height: 305px;
+    height: 307px;
     background-color: #63a73a;
     top: 0;
     left: 0;
@@ -43,8 +43,6 @@
   }
 
 }
-
-
 
 .first-screen__header {
   font-family: "Oswald", "Arial", sans-serif;
@@ -73,7 +71,6 @@
 .first-screen__button {
   margin-left: 20px;
 }
-
 
 @media (min-width: $tablet-width) {
   .first-screen__header {
@@ -133,7 +130,7 @@
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 51px;
+    padding-top: 54px;
     padding-bottom: 505px;
   }
 
@@ -147,25 +144,33 @@
 }
 
 @media (min-width: $desktop-width) {
-  .first-screen__wrapper {
-    width: 450px;
-    padding: 0;
-    margin: 0;
-    margin-top: 55px;
-    margin-bottom: 53px;
-    padding-left: 80px;
 
+
+  .first-screen {
+    width: 100%;
+    // width: 1220px;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 191px;
+    // padding-top: 51px;
+    // padding-left: 110px;
+    // padding-right: 110px;
+    // margin-bottom: 245px;
 
     &::before {
       display: block;
       content: "";
       position: absolute;
       background: no-repeat url("../img/index-background-desktop@1x.jpg");
-      width: 720px;
-      height: 696px;
+      width: 50%;
+      // height: 100%;
+      min-height: 694px;
       background-color: #63a73a;
-      top: -224px;
-      left: 609px;
+      background-position: 0 0;
+      background-size: cover;
+      top: -114px;
+      right: 0;
       z-index: -1;
 
       @media (min-resolution: $retina-dppx) {
@@ -174,6 +179,41 @@
       }
 
     }
+  }
+
+  .first-screen__wrapper {
+    box-sizing: border-box;
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 110px;
+    padding-top: 106px;
+    padding-bottom: 55px;
+
+    margin: 0 auto;
+    // margin-top: 55px;
+    // margin-bottom: 53px;
+    // padding-left: 80px;
+
+
+    // &::before {
+    //   display: block;
+    //   content: "";
+    //   position: absolute;
+    //   background: no-repeat url("../img/index-background-desktop@1x.jpg");
+    //   width: 720px;
+    //   height: 696px;
+    //   background-color: #63a73a;
+    //   top: -224px;
+    //   left: 609px;
+    //   z-index: -1;
+
+    //   @media (min-resolution: $retina-dppx) {
+    //     background: url("../img/index-background-desktop@2x.jpg");
+    //     background-size: 720px auto;
+    //   }
+
+    // }
 
     &::after {
       content: "";
@@ -181,7 +221,7 @@
       background: no-repeat url("../img/index-can-desktop@1x.png");
       width: 552px;
       height: 499px;
-      top: -80px;
+      top: 25px;
       left: 450px;
       z-index: -1;
 
@@ -193,6 +233,7 @@
   }
 
   .first-screen__header {
+    width: 450px;
     font-size: 60px;
     line-height: 60px;
     color: #111111;
@@ -200,21 +241,16 @@
     margin: 0;
     padding: 0;
     padding-bottom: 40px;
+    padding-left: 80px;
   }
 
-  .first-screen {
-    width: 1220px;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 51px;
-    padding-left: 110px;
-    padding-right: 110px;
-    margin-bottom: 245px;
-  }
+
 
   .first-screen__moto {
     margin: 0;
     padding: 0;
+    padding-left: 80px;
+    padding-bottom: 54px;
   }
 
   .first-screen__button {

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -44,13 +44,15 @@
           <div class="cat__item cat-item">
             <label for="id-field" class="cat-item__label">
               <span class="cat-item__text">Имя:*</span>
-              <input type="text" id="id-field" class="cat-item__field" placeholder="Барсик" name="cat name:" required="">
+              <input type="text" id="id-field" class="cat-item__field" placeholder="Барсик" name="cat name:"
+                required="">
             </label>
           </div>
           <div class="cat__item cat-item">
             <label for="weight-field" class="cat-item__label">
               <span class="cat-item__text">Вес (кг):*</span>
-              <input type="text" id="weight-field" class="cat-item__field" placeholder="7" name="cat weight:" required="">
+              <input type="text" id="weight-field" class="cat-item__field" placeholder="7" name="cat weight:"
+                required="">
             </label>
           </div>
           <div class="cat__item cat-item">
@@ -89,7 +91,8 @@
           <div class="owner__wrapper">
             <label for="mobile-field" class="owner__label">
               <span class="owner__text">Телефон:*</span>
-              <input type="tel" name="mobile" id="mobile-field" class="owner__mobile owner__icon" placeholder="8 (960) 900-60-90">
+              <input type="tel" name="mobile" id="mobile-field" class="owner__mobile owner__icon"
+                placeholder="8 (960) 900-60-90">
               <svg class="owner__svg2" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -101,7 +104,8 @@
         <div class="comment__title">
           <h3 class="comment__text">Комментарий</h3>
         </div>
-        <textarea name="comment" id="comment-field" rows="8" class="comment__area" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea name="comment" id="comment-field" rows="8" class="comment__area"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
       <fieldset class="add-field">
         <div class="add-field__header">
@@ -140,7 +144,9 @@
           <p class="contacts__address">Санкт-Петербург</p>
         </div>
       </div>
-      <div class="contacts__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd29277ff8b9ce2ad9a56a5a84609877a4673d5c5ca30041338f7a28986d4d8a&amp;source=constructor" width="320" height="363"></iframe>
+      <div class="contacts__map"><iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd29277ff8b9ce2ad9a56a5a84609877a4673d5c5ca30041338f7a28986d4d8a&amp;source=constructor"
+          width="320" height="363"></iframe>
       </div>
     </section>
   </main>
@@ -187,7 +193,13 @@
       </div>
     </div>
   </footer>
+  <script src="/js/svg4everybody.js"></script>
+  <script src="/js/picturefill.js"></script>
   <script src="/js/script.js"></script>
+  <script>
+    svg4everybody(); // run it now or whenever you are ready
+
+  </script>
 </body>
 
 </html>

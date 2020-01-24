@@ -27,6 +27,11 @@
   overflow: hidden;
 }
 
+picture {
+  padding: 0;
+  margin: 0;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
