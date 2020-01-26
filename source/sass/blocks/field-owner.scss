@@ -51,7 +51,7 @@
   font-size: 16px;
   line-height: 18px;
   box-sizing: border-box;
-  height: 52px;
+  height: 45px;
 
   &:hover {
     border: 1px solid rgba(205, 205, 205, 1);
@@ -196,6 +196,7 @@
     font-weight: 400;
     color: #444444;
     padding: 10px 45px 10px 20px;
+    height: 52px;
   }
 
   .owner__label {
@@ -217,6 +218,8 @@
   .owner {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 5px;
+    margin-bottom: 47px;
   }
 
   .owner__field {

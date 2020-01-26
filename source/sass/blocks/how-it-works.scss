@@ -51,7 +51,7 @@
 .how-it-works__item--twotimes::before {
   content: "";
   position: absolute;
-  background:  #68b738 center no-repeat url("../img/advantage-dining@1x.png");
+  background: #68b738 center no-repeat url("../img/advantage-dining@1x.png");
   top: -3px;
   left: 0;
   width: 60px;
@@ -249,5 +249,5 @@
   .how-it-works__item:nth-child(1),
   .how-it-works__item:nth-child(2) {
     padding-bottom: 30px;
-}
+  }
 }

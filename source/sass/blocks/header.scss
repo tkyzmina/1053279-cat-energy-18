@@ -57,8 +57,13 @@
   margin: 0;
 }
 
+.header__logo {
+  display: block;
+}
+
 .header__logo-image {
   margin-top: 13px;
+  height: 38px;
 }
 
 .header__logo-image:hover {
@@ -145,6 +150,10 @@
     padding-top: 11px;
   }
 
+  .header__logo-image {
+    height: 59px;
+  }
+
   .header__top-wrapper {
     padding: 0;
     display: block;
@@ -179,13 +188,13 @@
 
   .header__logo img {
     width: 173px;
-    height: auto;
+    height: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    margin-top: -9px;
+    margin-top: 27px;
   }
 
   .main-nav__list {
@@ -197,12 +206,15 @@
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 50px;
+  }
+
+  .header__top-wrapper {
+    margin-top: 43px;
   }
 
   .header__logo img {
     width: 202px;
-    height: auto;
+    height: 59px;
   }
 
   .header__logo-image {

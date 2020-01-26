@@ -100,25 +100,25 @@
   margin: 0 auto;
 }
 
-.example__img-before{
+.example__img-before {
   display: block;
   max-width: none;
   width: 320px;
   height: 240px;
-  }
+}
 
-.example__img-after{
+.example__img-after {
   display: none;
   max-width: none;
   width: 320px;
   height: 240px;
 }
 
-.example__slider-before{
+.example__slider-before {
   position: absolute;
   width: 100%;
   height: 100%;
- }
+}
 
 .range__scale {
   position: relative;
@@ -273,18 +273,18 @@
     padding-top: 14px;
   }
 
-  .example__img-before{
+  .example__img-before {
     display: block;
     width: 690px;
     height: 517px;
     padding-left: 0;
-    top:0;
+    top: 0;
     bottom: 0;
-    right:0;
+    right: 0;
     left: 0;
   }
 
-  .example__img-after{
+  .example__img-after {
     display: none;
     max-width: none;
     width: 690px;
@@ -295,8 +295,9 @@
     width: 100vw;
     height: 631px;
     background-color: #f2f2f2;
-    background-image: linear-gradient(180deg,#fff 170px,#eaeaea 170px);
+    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
   }
+
   .example__center {
     width: 690px;
     height: 631px;
@@ -393,8 +394,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .example__desktop-wrapper{
-    width: 1220px;
+  .example__desktop-wrapper {
+    width: 1240px;
     margin: 0 auto;
     display: flex;
   }
@@ -431,23 +432,23 @@
 
   .example__slider {
     position: relative;
-    background-image: none;
     background: none;
+    background-image: none;
   }
 
   .example__slider-before {
     bottom: 38px;
-    left: 87px;
+    left: 74px;
   }
 
-  .example__img-before{
+  .example__img-before {
     display: block;
     width: 690px;
     height: 517px;
     padding-left: 0;
   }
 
-  .example__img-after{
+  .example__img-after {
     display: none;
     width: 690px;
     height: 517px;
@@ -485,17 +486,15 @@
   // }
 
   .example {
-    width: 100мц;
+    width: 100vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
-    // padding-bottom: 28px;
     margin-bottom: 0;
-    background-color: $bg-gray;
     height: 613px;
     background-color: #f2f2f2;
-    background-image: linear-gradient(180deg,#fff 165px,#f2f2f2 170px);
+    background-image: linear-gradient(180deg, #ffffff 165px, #f2f2f2 170px);
   }
 
   .example__data {
@@ -530,6 +529,6 @@
 
   .range {
     bottom: 89px;
-    left: 166px;
+    left: 153px;
   }
 }

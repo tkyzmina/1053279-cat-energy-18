@@ -1,5 +1,5 @@
 .weight-plan {
-  padding-top: 22px;
+  padding-top: 2px;
 }
 
 .weight-plan__header {
@@ -129,6 +129,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .weight-plan {
+    padding-top: 22px;
+  }
+
   .weight-plan__header {
     font-size: 36px;
     line-height: 37.02px;

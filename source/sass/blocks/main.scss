@@ -68,11 +68,8 @@ a {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-
   background-color: #68b738;
-
   cursor: pointer;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,8 +87,9 @@ a {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5eaa2f;
 }
+
 .inner-page {
-  overflow: hidden;;
+  overflow: hidden;
 }
 
 @media (min-width: $mobile-width) {

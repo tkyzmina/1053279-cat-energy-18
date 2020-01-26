@@ -47,6 +47,7 @@
 
   &:last-of-type {
     border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 25px;
   }
 }
 
@@ -122,7 +123,7 @@
 
 .products__header--all {
   position: relative;
-  width: 220px;
+  width: 204px;
   margin: 0 auto;
   padding-top: 79px;
   padding-bottom: 7px;
@@ -132,7 +133,7 @@
     position: absolute;
     background: url("../img/icon-plus-mobile.svg");
     top: 26px;
-    left: 96px;
+    left: 87px;
     width: 30px;
     height: 30px;
     opacity: 0.2;
