@@ -49,7 +49,6 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #111111;
   position: relative;
   display: block;
   padding-left: 45px;
@@ -81,8 +80,8 @@
   border: 1px solid #bababa;
 }
 
-.add-field__checkbox:checked+.add-field__line::before {
-  background-image: url(../img/icon-tick.svg);
+.add-field__checkbox:checked + .add-field__line::before {
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 70%;
@@ -101,18 +100,15 @@
     line-height: 36px;
     font-weight: 400;
     color: #111111;
+    margin-bottom: 57px;
+    padding-right: 43px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
 
   .add-field {
     padding-left: 39px;
     padding-right: 36px;
-  }
-
-  .add-field__legend {
-    margin-bottom: 57px;
-    padding-right: 43px;
-    padding-left: 40px;
-    margin-left: -40px;
   }
 
   .add-field__header {

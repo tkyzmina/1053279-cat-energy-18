@@ -1,7 +1,7 @@
 .first-screen {
   width: 320px;
-  margin-bottom: 22px;
   margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .first-screen__wrapper {
@@ -41,7 +41,6 @@
       background-size: 320px auto;
     }
   }
-
 }
 
 .first-screen__header {
@@ -144,19 +143,12 @@
 }
 
 @media (min-width: $desktop-width) {
-
-
   .first-screen {
     width: 100%;
-    // width: 1220px;
     position: relative;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 191px;
-    // padding-top: 51px;
-    // padding-left: 110px;
-    // padding-right: 110px;
-    // margin-bottom: 245px;
+    padding-bottom: 188px;
 
     &::before {
       display: block;
@@ -164,7 +156,6 @@
       position: absolute;
       background: no-repeat url("../img/index-background-desktop@1x.jpg");
       width: 50%;
-      // height: 100%;
       min-height: 694px;
       background-color: #63a73a;
       background-position: 0 0;
@@ -177,7 +168,6 @@
         background: url("../img/index-background-desktop@2x.jpg");
         background-size: 720px auto;
       }
-
     }
   }
 
@@ -189,31 +179,6 @@
     padding-right: 110px;
     padding-top: 106px;
     padding-bottom: 55px;
-
-    margin: 0 auto;
-    // margin-top: 55px;
-    // margin-bottom: 53px;
-    // padding-left: 80px;
-
-
-    // &::before {
-    //   display: block;
-    //   content: "";
-    //   position: absolute;
-    //   background: no-repeat url("../img/index-background-desktop@1x.jpg");
-    //   width: 720px;
-    //   height: 696px;
-    //   background-color: #63a73a;
-    //   top: -224px;
-    //   left: 609px;
-    //   z-index: -1;
-
-    //   @media (min-resolution: $retina-dppx) {
-    //     background: url("../img/index-background-desktop@2x.jpg");
-    //     background-size: 720px auto;
-    //   }
-
-    // }
 
     &::after {
       content: "";
@@ -243,8 +208,6 @@
     padding-bottom: 40px;
     padding-left: 80px;
   }
-
-
 
   .first-screen__moto {
     margin: 0;

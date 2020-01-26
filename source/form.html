@@ -31,7 +31,6 @@
       </ul>
     </nav>
   </header>
-
   <main class="green-line">
     <div class="main-header">
       <h1 class="main-header__title">Подбор программы</h1>
@@ -64,16 +63,17 @@
         </fieldset>
         <div class="result">
           <fieldset class="result__list">
-            <input type="radio" name="weight-plan" value="slim" id="slim-plan" class="result__input" checked="">
+            <input type="radio" name="weight-plan" value="slim" id="slim-plan" class="result__input visually-hidden"
+              checked="">
             <label for="slim-plan" class="result__label result__label--radio">Похудение</label>
-            <input type="radio" name="weight-plan" value="pro" id="pro-plan" class="result__input">
+            <input type="radio" name="weight-plan" value="pro" id="pro-plan" class="result__input visually-hidden">
             <label for="pro-plan" class="result__label result__label--radio">Набор массы</label>
-            <input type="radio" name="weight-plan" value="advice" id="advice-plan" class="result__input">
+            <input type="radio" name="weight-plan" value="advice" id="advice-plan"
+              class="result__input visually-hidden">
             <label for="advice-plan" class="result__label result__label--radio">Не знаю (Нужен ваш совет)</label>
           </fieldset>
         </div>
       </div>
-
       <fieldset class="owner">
         <div class="owner__title owner-title">
           <h3 class="owner-title__text owner-title__line">Контактные данные (владельца кота)</h3>
@@ -135,12 +135,12 @@
         <p class="form__note">* — Обязательные поля</p>
       </div>
     </form>
-    <section class="contacts">
+    <section class="contacts contacts-form">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__wrapper">
         <p class="contacts__invite">Приглашaем<br> к сотрудничеству дилеров!</p>
         <div class="contacts__list">
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 </p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__address">Санкт-Петербург</p>
         </div>
       </div>
@@ -150,7 +150,6 @@
       </div>
     </section>
   </main>
-
   <footer class="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Cat Energy"></a>
@@ -161,7 +160,6 @@
             <svg class="social__link social__link--vksvg" width="22" height="12">
               <use xlink:href="img/sprite.svg#icon-vk"></use>
             </svg>
-
           </a>
         </li>
         <li class="social__item">
@@ -181,14 +179,12 @@
           </a>
         </li>
       </ul>
-
       <div class="copyright-wrapper">
         <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="copyright__text">HTML Academy</p>
           <svg class="copyright__logo" width="27" height="34">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
-
         </a>
       </div>
     </div>
