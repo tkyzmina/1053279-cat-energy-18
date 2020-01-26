@@ -63,7 +63,6 @@
   &:hover {
     fill: #68b738;
   }
-
 }
 
 .copyright__text {
@@ -96,8 +95,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 63px;
-    padding-bottom: 62px;
+    padding-top: 58px;
+    padding-bottom: 59px;
     margin: 0 auto;
   }
 
@@ -167,20 +166,12 @@
     padding: 0;
   }
 
-  // .container {
-  //   width: 1220px;
-  //   margin: 0 auto;
-  //   padding-left: 110px;
-  //   padding-right: 110px;
-  // }
-
-
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 55px;
-    padding-bottom: 62px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .social {

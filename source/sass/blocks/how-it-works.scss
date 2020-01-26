@@ -24,15 +24,14 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   padding-left: 80px;
 }
 
 .how-it-works__item--good::before {
   content: "";
   position: absolute;
-  background: center no-repeat url("../img/advantage-leaf@1x.png");
-  background-color: #68b738;
+  background: #68b738 center no-repeat url("../img/advantage-leaf@1x.png");
   top: -3px;
   left: 0;
   width: 60px;
@@ -42,8 +41,7 @@
 .how-it-works__item--powder::before {
   content: "";
   position: absolute;
-  background: center no-repeat url("../img/advantage-powder@1x.png");
-  background-color: #68b738;
+  background: #68b738 center no-repeat url("../img/advantage-powder@1x.png");
   top: -3px;
   left: 0;
   width: 60px;
@@ -53,8 +51,7 @@
 .how-it-works__item--twotimes::before {
   content: "";
   position: absolute;
-  background: center no-repeat url("../img/advantage-dining@1x.png");
-  background-color: #68b738;
+  background: #68b738 center no-repeat url("../img/advantage-dining@1x.png");
   top: -3px;
   left: 0;
   width: 60px;
@@ -64,15 +61,12 @@
 .how-it-works__item--scale::before {
   content: "";
   position: absolute;
-  background: center no-repeat url("../img/advantage-clock@1x.png");
-  background-color: #68b738;
+  background: #68b738 center no-repeat url("../img/advantage-clock@1x.png");
   top: -3px;
   left: 0;
   width: 60px;
   height: 60px;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .how-it-works__header {
@@ -96,7 +90,7 @@
     line-height: 24px;
     width: 240px;
     padding: 0;
-    padding-top: 110px;
+    padding-top: 113px;
     margin: 0;
 
     &:nth-child(2n) {
@@ -106,7 +100,7 @@
 
   .how-it-works__item:nth-child(1),
   .how-it-works__item:nth-child(2) {
-    padding-bottom: 135px;
+    padding-bottom: 132px;
   }
 
   .how-it-works__item:nth-child(3),
@@ -119,6 +113,7 @@
     height: 80px;
     top: 0;
     left: 0;
+    background-color: #68b738;
   }
 
   .how-it-works__item--good::after {
@@ -179,7 +174,6 @@
   .how-it-works__list {
     display: flex;
     justify-content: space-between;
-    // margin-bottom: 200px;
   }
 
   .how-it-works__item {
@@ -200,8 +194,8 @@
   }
 
   .how-it-works {
-    margin-bottom: 100px;
-    padding-top: 43px;
+    margin-bottom: 20px;
+    padding-top: 42px;
   }
 
   .how-it-works__item--good::after {
@@ -249,7 +243,11 @@
     color: $bg-gray;
     top: -38px;
     left: 110px;
-    ;
     z-index: -1;
+  }
+
+  .how-it-works__item:nth-child(1),
+  .how-it-works__item:nth-child(2) {
+    padding-bottom: 30px;
   }
 }

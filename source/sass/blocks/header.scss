@@ -39,15 +39,17 @@
 }
 
 .header {
-  padding: 0 20px;
+  padding: 0;
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header__top-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+  padding-bottom: 5px;
 }
 
 .header-logo {
@@ -55,8 +57,13 @@
   margin: 0;
 }
 
+.header__logo {
+  display: block;
+}
+
 .header__logo-image {
   margin-top: 13px;
+  height: 38px;
 }
 
 .header__logo-image:hover {
@@ -98,17 +105,12 @@
   &:active {
     color: rgba($color:#111111, $alpha: 0.3);
   }
-
 }
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .main-nav__list {
     display: none;
   }
-
-  // .main-nav--opened .main-nav__list {
-  //   display: block;
-  // }
 
   &--active {
     display: block;
@@ -130,19 +132,26 @@
     border-bottom: 1px solid #e6e6e6;
     padding-bottom: 3px;
   }
-
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    margin-top: -2px;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 708px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 11px;
+  }
+
+  .header__logo-image {
+    height: 59px;
   }
 
   .header__top-wrapper {
@@ -155,7 +164,6 @@
     width: 440px;
     justify-content: space-between;
     padding: 0;
-    // margin-top: 40px;
   }
 
   .site-list__item a {
@@ -180,11 +188,15 @@
 
   .header__logo img {
     width: 173px;
-    height: auto;
+    height: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    margin-top: 33px;
+  }
+
   .main-nav__list {
     width: 480px;
   }
@@ -192,14 +204,17 @@
   .header {
     width: 1220px;
     margin: 0 auto;
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header__top-wrapper {
+    margin-top: 43px;
   }
 
   .header__logo img {
     width: 202px;
-    height: auto;
+    height: 59px;
   }
 
   .header__logo-image {
@@ -248,5 +263,4 @@
   .inner-page .site-list__item--active {
     border-bottom: 2px solid #68b738;
   }
-
 }

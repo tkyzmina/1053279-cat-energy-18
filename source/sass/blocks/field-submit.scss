@@ -1,4 +1,4 @@
-.select__button {
+.form__button {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -6,13 +6,13 @@
   color: #ffffff;
 }
 
-.select__note {
+.form__note {
   text-align: center;
   margin-top: 21px;
 }
 
 @media (min-width: $tablet-width) {
-  .select__button {
+  .form__button {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -22,13 +22,13 @@
     margin: 0;
   }
 
-  .select__submit {
+  .form__submit {
     display: flex;
     align-items: center;
     padding-left: 40px;
   }
 
-  .select__note {
+  .form__note {
     font-size: 16px;
     line-height: 16px;
     font-weight: 400;
@@ -39,15 +39,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .select__button {
+  .form__button {
     width: 568px;
   }
 
-  .select__submit {
+  .form__submit {
     padding-left: 0;
   }
 
-  .select__note {
+  .form__note {
     margin-left: 82px;
   }
 }
