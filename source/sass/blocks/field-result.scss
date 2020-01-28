@@ -47,7 +47,8 @@
 }
 
 .result__input:focus + .result__label::after {
-  border: 1px solid #bab8b8;
+  border: 1px solid #4a4848;
+  box-shadow: 0 0 5px (0, 0, 0, 0.5);
 }
 
 .result__label--radio {
